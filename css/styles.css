@@ -1,0 +1,103 @@
+/* RUTA DEL ARCHIVO: css/styles.css */
+
+/* ===================================================
+   1. VARIABLES GLOBALES (:root)
+=================================================== */
+:root {
+    /* Paleta de colores Retro Game (basada en el diseño oficial) */
+    --bg-primary: #070913;        /* Fondo principal oscuro */
+    --bg-secondary: #0d111a;      /* Fondo secundario / secciones */
+    --bg-card: #0B1024;           /* Fondo de tarjetas */
+    --bg-placeholder: #151b2b;    /* Fondo para cajas de imagen mientras cargan */
+    
+    --border-card: #162032;       /* Borde sutil de tarjetas */
+    --border-hover: #2a3b5c;      /* Borde iluminado al pasar el mouse */
+    
+    --text-primary: #ffffff;      /* Texto blanco principal */
+    --text-secondary: #d1d5db;    /* Texto gris claro para párrafos */
+    --text-muted: #b0b0b0;        /* Texto atenuado para footer */
+    
+    --accent-blue: #4da6ff;       /* Azul neón para enlaces activos */
+    --accent-purple: #9C27B0;     /* Morado retro para efectos secundarios */
+    --accent-red: #e50914;        /* Rojo intenso para botones principales (CTA) */
+    --accent-red-hover: #ff3333;  /* Rojo brillante en hover */
+
+    /* Tipografía y medidas de contenedor */
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 1200px;
+    --container-width: 96%;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --transition-fast: 0.3s ease;
+}
+
+/* ===================================================
+   2. RESET Y ESTILOS GENERALES
+=================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Evita saltos bruscos de pantalla mientras fetch() carga los componentes */
+#header-placeholder {
+    min-height: 90px;
+}
+
+#footer-placeholder {
+    margin-top: auto;
+    min-height: 180px;
+}
+
+main {
+    flex: 1;
+    width: var(--container-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===================================================
+   3. TÍTULOS Y SECCIONES COMUNES
+=================================================== */
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin: 0 auto 25px auto;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--border-card);
+}
+
+/* Aviso técnico en caso de abrir el HTML sin Live Server */
+.server-warning {
+    background-color: #3b0d0d;
+    border: 1px solid var(--accent-red);
+    color: var(--text-primary);
+    padding: 15px 20px;
+    margin: 15px auto;
+    width: var(--container-width);
+    max-width: var(--max-width);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    text-align: center;
+}

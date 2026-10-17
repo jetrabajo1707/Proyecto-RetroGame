@@ -1,0 +1,15 @@
+# RUTA DEL ARCHIVO: .gitignore
+
+# Dependencias y entornos de Node (por si se instalan herramientas a futuro)
+node_modules/
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Carpetas de descargas temporales o compilaciones locales
+downloads/
+dist/
+build/

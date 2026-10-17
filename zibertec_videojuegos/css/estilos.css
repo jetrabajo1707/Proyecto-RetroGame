@@ -1,0 +1,86 @@
+body{ margin: 0%;
+      font-family: sans-serif}
+.navbar{ display:flex ;
+          justify-content: space-between;
+        align-items: center;
+       background-color: black;
+       color: white;
+       padding: 5px 30px;}
+img{height: 80px;width: 80px ;}
+.nav-links{ 
+    list-style: none;
+    display: flex;
+     gap: 100px;
+    margin: 0%;
+    padding: 0%;}
+.nav-links a { 
+    color: white;
+    text-decoration: none;
+}
+.nav-links a:hover{ 
+    color: orange;
+    padding: 0%;
+text-decoration: underline;}
+main{ 
+    display: flex;}
+aside{ width: 25%;padding: 20px;background-color: black; color: white;}
+aside h3{padding: 20px 0px;}
+aside a{padding: 15px 30px;display: block; color: white;}
+.aside a:hover{ color: orange; text-decoration: underline;padding: 0;}
+aside img{ width: 70%; margin: 20px auto;  display: block;}
+section{width: 70% ;padding:  5px;display: flex; flex-direction: row;
+justify-content: space-around;flex-wrap: wrap; background-color: black;color: white;}
+section figure{width: 30%;margin-top: 10px;margin bottom: 10px;}
+section figure img{ width: 80%;margin: 10px auto; display: block;}
+img:hover{ box-shadow: 0 0 40px white;transition: 1s;height: 500px; width: 500px;}
+section figure figcaption{ margin: 10px;text-align: center;}
+footer{
+    background-color: #24262b;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+.footer-h3{
+    margin-bottom: 25px;
+    position: relative;
+    width: fit-contents;
+}
+.footer-section h3::after {
+    width: 60%; 
+    height: 3px;
+    background-color: orangered ;
+    bottom: -6px;
+     left: 0; }
+.footer-section  ul{
+    list-style: none;
+    display :flex ;
+    flex-direction: column;
+    gap: 6px;
+}
+.footer-section ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.footer-section .social-icons {
+    flex-direction: row;
+    gap: 20px;
+}
+.footer-section .social-icons a{ 
+    background-color: white;
+    color: white;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}
+    
+
+    
+    
+    

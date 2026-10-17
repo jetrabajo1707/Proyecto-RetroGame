@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Inicio</title>
+
+    <!-- Hojas de estilo globales y modulares -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: Inyectada dinámicamente por js/components.js -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE INICIO -->
+    <main>
+
+        <!-- BANNER PRINCIPAL PROMOCIONAL -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/PrincipalBanner.jpg (Dimensiones recomendadas: 1200x365px) -->
+            <img src="./imagenes/banners/PrincipalBanner.jpg" alt="Banner principal de Retro Game">
+        </section>
+
+        <!-- SECCIÓN SOBRE NOSOTROS -->
+        <section class="sobre-nosotros-section">
+            <div class="sobre-nosotros-texto">
+                <h2>Sobre Nosotros</h2>
+                <p>En nuestra tienda apasionada por los videojuegos retro, nos especializamos en revivir la época dorada del entretenimiento interactivo ofreciendo consolas icónicas, cartuchos clásicos y coleccionables únicos. Cada producto de nuestro catálogo pasa por un riguroso proceso de revisión para garantizar su autenticidad y excelente funcionamiento. Nos esforzamos por construir un espacio donde la nostalgia cobra vida y los verdaderos entusiastas encuentran esas joyas difíciles de conseguir. Ya seas un coleccionista experimentado o alguien que busca recordar sus mejores momentos de infancia, aquí hallarás atención cercana y asesoramiento experto. Explora nuestras repisas digitales, descubre grandes clásicos que marcaron historia y conecta con una comunidad que comparte tu misma pasión. Te invitamos a dar un viaje en el tiempo y revivir la magia del pixel con nosotros.</p>
+            </div>
+            <div class="sobre-nosotros-imagen">
+                <!-- REEMPLAZAR IMAGEN: Coloca tu imagen en imagenes/PrincipalSobreNosotros.jpg -->
+                <img src="./imagenes/PrincipalSobreNosotros.jpg" alt="Televisor retro con videojuego">
+            </div>
+        </section>
+
+        <!-- GRILLA DE TRES COLUMNAS (Marcas | Destacados | Video) -->
+        <section class="grid-secciones">
+
+            <!-- Columna 1: Marcas -->
+            <div class="columna-marcas">
+                <h3>Marcas</h3>
+                <ul>
+                    <li><a href="./paginas/consolas.html">Nintendo</a></li>
+                    <li><a href="./paginas/consolas.html">Sony</a></li>
+                    <li><a href="./paginas/consolas.html">Sega</a></li>
+                    <li><a href="./paginas/consolas.html">Atari</a></li>
+                    <li><a href="./paginas/accesorios.html">BigBigWon</a></li>
+                    <li><a href="./paginas/accesorios.html">Raspberry</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Productos Destacados -->
+            <div class="columna-destacados">
+                <h3>Destacados</h3>
+                <div class="productos-grid">
+
+                    <article class="card-producto">
+                        <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/PrincipalNintento64.jpg -->
+                        <div class="img-producto">
+                            <img src="./imagenes/PrincipalNintento64.jpg" alt="N64 Consola/Mando">
+                        </div>
+                        <p class="nombre-producto">N64 Consola/Mando</p>
+                        <p class="precio-producto">S/. 350</p>
+                        <a href="./paginas/consolas.html" class="btn-ver-mas">Ver Más</a>
+                    </article>
+
+                    <article class="card-producto">
+                        <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/PrincipalLegendaZelda.jpg -->
+                        <div class="img-producto">
+                            <img src="./imagenes/PrincipalLegendaZelda.jpg" alt="La Leyenda de Zelda (NES)">
+                        </div>
+                        <p class="nombre-producto">La Leyenda de Zelda (NES)</p>
+                        <p class="precio-producto">S/. 350</p>
+                        <a href="./paginas/videojuegos.html" class="btn-ver-mas">Ver Más</a>
+                    </article>
+
+                    <article class="card-producto">
+                        <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/PrincipalEstatuaMario.jpg -->
+                        <div class="img-producto">
+                            <img src="./imagenes/PrincipalEstatuaMario.jpg" alt="Estatua Mario Coleccionable">
+                        </div>
+                        <p class="nombre-producto">Estatua Mario Coleccionable</p>
+                        <p class="precio-producto">S/. 350</p>
+                        <a href="./paginas/coleccionables.html" class="btn-ver-mas">Ver Más</a>
+                    </article>
+
+                    <article class="card-producto">
+                        <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/PrincipalMandoNintendo.jpg -->
+                        <div class="img-producto">
+                            <img src="./imagenes/PrincipalMandoNintendo.jpg" alt="Mando Retro Multi Plataforma">
+                        </div>
+                        <p class="nombre-producto">Mando Retro Multi Plataforma</p>
+                        <p class="precio-producto">S/. 350</p>
+                        <a href="./paginas/accesorios.html" class="btn-ver-mas">Ver Más</a>
+                    </article>
+
+                </div>
+            </div>
+
+            <!-- Columna 3: Video Demostrativo -->
+            <div class="columna-video">
+                <h3>Video</h3>
+                <div class="video-box">
+                    <video controls preload="metadata">
+                        <!-- REEMPLAZAR VIDEO: Coloca tu video local en videos/PrincipalVideo.mp4 -->
+                        <source src="./videos/PrincipalVideo.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: Inyectado dinámicamente por js/components.js -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal global -->
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Accesorios</title>
+
+    <!-- Hojas de estilo globales (usamos ../ porque estamos dentro de la carpeta paginas/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: js/components.js inyectará aquí components/header.html -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE ACCESORIOS -->
+    <main>
+
+        <!-- BANNER DE ACCESORIOS -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/banner-accesorios.png (Dimensiones recomendadas: 1200x365px) -->
+            <img src="../imagenes/banners/banner-accesorios.png" alt="Equipa tu pasión - Accesorios para un mejor juego">
+        </section>
+
+        <!-- SECCIÓN: NUESTROS ACCESORIOS (4 Tarjetas según la referencia visual de Accesorios) -->
+        <section aria-labelledby="titulo-accesorios">
+            <h2 id="titulo-accesorios" class="section-title">Nuestros Accesorios</h2>
+
+            <div class="contenedor-productos">
+
+                <!-- Tarjeta 1: Controles -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca tu imagen en imagenes/accesorios/control.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/accesorios/control.png" alt="Controles para videojuegos">
+                    <h3>Controles</h3>
+                    <p class="price">S/. 45</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Tarjeta 2: Cables -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca tu imagen en imagenes/accesorios/cables.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/accesorios/cables.png" alt="Cables de conexión">
+                    <h3>Cables</h3>
+                    <p class="price">S/. 35</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Tarjeta 3: Memorias -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca tu imagen en imagenes/accesorios/memorias.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/accesorios/memorias.png" alt="Memorias de almacenamiento">
+                    <h3>Memorias</h3>
+                    <p class="price">S/. 60</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Tarjeta 4: Adaptadores -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca tu imagen en imagenes/accesorios/adaptadores.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/accesorios/adaptadores.png" alt="Adaptadores retro">
+                    <h3>Adaptadores</h3>
+                    <p class="price">S/. 50</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: js/components.js inyectará aquí components/footer.html -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal (ajustará automáticamente las rutas con ../ al detectar que estamos en paginas/) -->
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

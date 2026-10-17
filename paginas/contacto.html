@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Contacto</title>
+
+    <!-- Google Fonts opcional -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Hojas de estilo globales (usamos ../ porque estamos en paginas/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/contacto_estilos.css">
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: Inyectada dinámicamente por js/components.js -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE CONTACTO -->
+    <main>
+
+        <!-- BANNER DE CONTACTO -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/Contacto_Banner.jpg (Dimensiones recomendadas: 1200x365px) -->
+            <img src="../imagenes/banners/Contacto_Banner.jpg" alt="Hablemos - Estamos para ayudarte">
+        </section>
+
+        <!-- SECCIÓN DE CONTENIDO (Formulario + Información de Contacto) -->
+        <section class="contenido">
+            
+            <!-- Formulario -->
+            <article class="tarjeta-formulario">
+                <h3>Formulario de Contacto</h3>
+                <form id="miFormulario" novalidate>
+                    <div class="fila-doble">
+                        <input type="text" placeholder="Nombres" required aria-label="Nombres">
+                        <input type="text" placeholder="Apellidos" required aria-label="Apellidos">
+                    </div>
+                    <input type="text" placeholder="Empresa" aria-label="Empresa">
+                    <div class="fila-doble">
+                        <select aria-label="Tipo de Documento" required>
+                            <option selected disabled value="">Tipo de Documento</option>
+                            <option value="DNI">DNI</option>
+                            <option value="RUC">RUC</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                            <option value="Carnet">Carnet de extranjería</option>
+                        </select>
+                        <input type="number" placeholder="N° de Documento" required aria-label="Número de Documento">
+                    </div>
+                    <input type="email" placeholder="Correo electrónico" required aria-label="Correo electrónico">
+                    <div class="fila-doble">
+                        <select aria-label="Motivo de Contacto" required>
+                            <option selected disabled value="">Motivo de Contacto</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="Consulta">Consulta</option>
+                            <option value="Felicitaciones">Felicitaciones</option>
+                        </select>
+                        <input type="tel" placeholder="Celular" required aria-label="Celular">
+                    </div>
+                    <textarea rows="4" placeholder="Mensaje" aria-label="Mensaje"></textarea>
+                    <div class="centrar">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+                </form>
+            </article>
+
+            <!-- Información y Mapa -->
+            <aside class="informacion-contacto">
+                <h3>Información de Contacto</h3>
+                <iframe src="https://www.google.com/maps?q=Av+Alfonso+Ugarte+1280+Breña+Lima+Peru&output=embed" class="mapa-iframe" title="Ubicación de Retro Game" allowfullscreen="" loading="lazy"></iframe>
+                <div class="lista-datos">
+                    <p>
+                        <!-- REEMPLAZAR IMAGEN: imagenes/Contacto_IconDireccion.png (24x24px) -->
+                        <img src="../imagenes/Contacto_IconDireccion.png" alt="Icono Dirección"> Av Alfonso Ugarte Nro 1280 Breña, Lima Perú
+                    </p>
+                    <p>
+                        <!-- REEMPLAZAR IMAGEN: imagenes/Contacto_IconTelefono.png (24x24px) -->
+                        <img src="../imagenes/Contacto_IconTelefono.png" alt="Icono Teléfono"> +51 954044573
+                    </p>
+                    <p>
+                        <!-- REEMPLAZAR IMAGEN: imagenes/Contacto_IconMail.png (24x24px) -->
+                        <img src="../imagenes/Contacto_IconMail.png" alt="Icono Correo"> retrogame@gmail.com
+                    </p>
+                </div>
+            </aside>
+
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: Inyectado dinámicamente por js/components.js -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal global y específico de contacto -->
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/pages/contacto.js"></script>
+
+</body>
+</html>

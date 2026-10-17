@@ -1,0 +1,172 @@
+
+:root {
+  --fondo: #050816;
+  --fondo-2: #102A43;
+  --cian: #00BCD4;
+  --cian-glow: #00E5FF;
+  --blanco: #FFFFFF;
+  --cian-claro: #B2EBF2;
+}
+/* base */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--fondo);
+  color: var(--blanco);
+  line-height: 1.5;
+}
+/* resaltar el menu */
+img { max-width: 100%; display: block; }
+ul { list-style: none; }
+a { color: inherit; text-decoration: none; }
+
+a:focus-visible, .boton:focus-visible {
+  outline: 3px solid var(--cian-glow);
+  outline-offset: 3px;
+}
+
+/* encabezado */
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.6rem 2rem;
+  background: var(--fondo-2);
+  border-bottom: 2px solid var(--cian);
+}
+
+.logo img { height: 64px; width: auto; }
+
+.menu ul { display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+
+.menu a {
+  display: block;
+  padding: 0.4rem 0.9rem;
+  border-bottom: 2px solid transparent;
+  transition: color .2s, border-color .2s;
+}
+
+.menu a:hover { color: var(--cian-glow); border-color: var(--cian-glow); }
+
+.menu a.activo {
+  color: var(--cian-glow);
+  border-color: var(--cian-glow);
+  text-shadow: 0 0 10px var(--cian-glow);
+}
+
+/* banner */
+.banner { padding: 1.5rem 2rem 0; }
+
+.banner img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border: 2px solid var(--cian);
+  box-shadow: 0 0 24px rgba(0, 229, 255, .35);
+}
+
+.servicios, .video { padding: 2.5rem 2rem 0; }
+
+/* ordenar los iconos de las tarjetas*/
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  background: var(--fondo-2);
+  border: 2px solid var(--cian);
+  transition: transform .25s, box-shadow .25s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 22px var(--cian-glow);
+}
+
+/* fondo claro para que se ven los iconos */
+.iconoTarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  background: var(--cian-claro);
+  border-bottom: 2px solid var(--cian);
+}
+
+.iconoTarjeta img { width: 110px; height: 110px; object-fit: contain; }
+
+.cuerpoTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  flex: 1;
+  padding: 1.2rem 1rem 1.4rem;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.5rem 1.8rem;
+  border: 2px solid var(--cian);
+  color: var(--cian-glow);
+  font-weight: 500;
+  transition: background .2s, color .2s, box-shadow .2s;
+}
+
+.boton:hover {
+  background: var(--cian-glow);
+  color: var(--fondo);
+  box-shadow: 0 0 14px var(--cian-glow);
+}
+
+/* video*/
+.video div {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid var(--cian);
+  background: #000;
+  box-shadow: 0 0 24px rgba(0, 229, 255, .25);
+}
+.video video { width: 100%; display: block; aspect-ratio: 16 / 9; }
+
+/* pie de pagína */
+.basedePag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 4rem;
+  margin-top: 3.5rem;
+  padding: 2rem;
+  background: var(--fondo-2);
+  border-top: 2px solid var(--cian);
+}
+
+.info h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  min-width: 190px;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 2px solid var(--cian);
+}
+
+.info li { margin-bottom: 0.3rem; }
+.info li a:hover { color: var(--cian-glow); text-decoration: underline; }
+
+.redes { display: flex; gap: 0.8rem; }
+
+.redes img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform .2s;
+}
+
+.redes a:hover img { transform: scale(1.15); }

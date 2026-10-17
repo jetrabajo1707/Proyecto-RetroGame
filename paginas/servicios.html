@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Servicios Técnicos</title>
+
+    <!-- Hojas de estilo globales (usamos ../ porque estamos en la carpeta paginas/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: Inyectada dinámicamente por js/components.js -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE SERVICIOS -->
+    <main>
+
+        <!-- BANNER DE SERVICIOS -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/banner-servicios.jpg (Dimensiones recomendadas: 1200x365px) -->
+            <img src="../imagenes/banners/banner-servicios.jpg" alt="Servicio técnico especializado - Tu consola en buenas manos">
+        </section>
+
+        <!-- SECCIÓN: NUESTROS SERVICIOS -->
+        <section aria-labelledby="titulo-servicios">
+            <h2 id="titulo-servicios" class="section-title">Nuestros Servicios</h2>
+
+            <div class="contenedor-productos">
+
+                <!-- Servicio 1: Reparación de consolas -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: imagenes/servicios/reparacion.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/servicios/reparacion.png" alt="Reparación de consolas clásicas">
+                    <h3>Reparación de consolas</h3>
+                    <p class="price">Diagnóstico técnico</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Servicio 2: Limpieza -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: imagenes/servicios/Limpieza.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/servicios/Limpieza.png" alt="Limpieza interna y externa">
+                    <h3>Limpieza</h3>
+                    <p class="price">Mantenimiento preventivo</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Servicio 3: Restauración -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: imagenes/servicios/Restauracion.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/servicios/Restauracion.png" alt="Restauración estética de consolas">
+                    <h3>Restauración</h3>
+                    <p class="price">Estética original</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+                <!-- Servicio 4: Cambio de componentes -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: imagenes/servicios/CambioDeComponentes.png (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/servicios/CambioDeComponentes.png" alt="Cambio de componentes y repuestos">
+                    <h3>Cambio De Componentes</h3>
+                    <p class="price">Repuestos garantizados</p>
+                    <a href="./contacto.html" class="btn-card">Ver Más</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN: VIDEO DEMOSTRATIVO -->
+        <section class="video-demostrativo-section" style="margin: 50px 0; text-align: center;">
+            <h2 class="section-title">Video Demostrativo</h2>
+            <div class="video-box" style="max-width: 800px; margin: 0 auto; background-color: var(--bg-card); border: 1px solid var(--border-card); border-radius: var(--radius-sm); padding: 12px;">
+                <video controls preload="metadata" style="width: 100%; border-radius: var(--radius-sm); max-height: 450px;">
+                    <!-- REEMPLAZAR VIDEO: Coloca tu archivo en videos/videoRestauracion.mp4 -->
+                    <source src="../videos/videoRestauracion.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: Inyectado dinámicamente por js/components.js -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal global -->
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

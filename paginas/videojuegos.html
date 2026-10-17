@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Videojuegos</title>
+
+    <!-- Hojas de estilo globales (usamos ../ porque estamos en la carpeta paginas/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Boxicons para los iconos sociales -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: Inyectada dinámicamente por js/components.js -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE VIDEOJUEGOS -->
+    <main>
+
+        <!-- BANNER DE VIDEOJUEGOS -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/super-mario-bros.jpg (Dimensiones recomendadas: 1200x365px) -->
+            <img src="../imagenes/banners/super-mario-bros.jpg" alt="Los clásicos nunca mueren - Super Mario Bros">
+        </section>
+
+        <!-- SECCIÓN DE CONTENIDO (Sidebar de Categorías + Galería de Juegos + Reproductor de Audio) -->
+        <div class="videojuegos-layout" style="display: grid; grid-template-columns: 220px 1fr; gap: 30px; margin-bottom: 50px;">
+
+            <!-- BARRA LATERAL (ASIDE): Categorías y Destacados -->
+            <aside class="aside-categorias" style="background-color: var(--bg-card); border: 1px solid var(--border-card); padding: 20px; border-radius: var(--radius-sm); height: fit-content;">
+                <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--text-primary); border-bottom: 1px solid var(--border-card); padding-bottom: 6px;">Categorias de Juegos</h3>
+                <ul style="list-style: none; margin-bottom: 20px;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Accion</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Aventuras</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Luchas</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Puzles</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Disparos</a></li>
+                </ul>
+
+                <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--text-primary); border-bottom: 1px solid var(--border-card); padding-bottom: 6px;">Destacados</h3>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Los Mas Vendidos</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Los Mas Populares</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Los Mas Vistos</a></li>
+                    <li style="margin-bottom: 8px;"><a href="#" style="color: var(--text-secondary); text-decoration: none; font-size: 14px;">Clasificacion por Critica</a></li>
+                </ul>
+            </aside>
+
+            <!-- SECCIÓN CENTRAL: Tarjetas de Videojuegos y Reproductor de Música -->
+            <div class="contenido-principal-juegos">
+                <h2 class="section-title">Videojuegos Clásicos</h2>
+
+                <!-- Grilla de Productos unificada -->
+                <div class="contenedor-productos" style="grid-template-columns: repeat(3, 1fr); margin-bottom: 40px;">
+
+                    <!-- Juego 1 -->
+                    <article class="card">
+                        <!-- REEMPLAZAR IMAGEN: imagenes/videojuegos/Double_Dragon.jpg (300x190px) -->
+                        <img src="../imagenes/videojuegos/Double_Dragon.jpg" alt="Double Dragon">
+                        <h3>Double Dragon</h3>
+                        <p class="price">S/. 40</p>
+                        <a href="./contacto.html" class="btn-card">Ver Más</a>
+                    </article>
+
+                    <!-- Juego 2 -->
+                    <article class="card">
+                        <!-- REEMPLAZAR IMAGEN: imagenes/videojuegos/The_Legend_of_Zelda.jpg (300x190px) -->
+                        <img src="../imagenes/videojuegos/The_Legend_of_Zelda.jpg" alt="The Legend of Zelda">
+                        <h3>The Legend of Zelda</h3>
+                        <p class="price">S/. 95</p>
+                        <a href="./contacto.html" class="btn-card">Ver Más</a>
+                    </article>
+
+                    <!-- Juego 3 -->
+                    <article class="card">
+                        <!-- REEMPLAZAR IMAGEN: imagenes/videojuegos/Street_Fighter.jpg (300x190px) -->
+                        <img src="../imagenes/videojuegos/Street_Fighter.jpg" alt="Street Fighter">
+                        <h3>Street Fighter</h3>
+                        <p class="price">S/. 50</p>
+                        <a href="./contacto.html" class="btn-card">Ver Más</a>
+                    </article>
+
+                    <!-- Juego 4 -->
+                    <article class="card">
+                        <!-- REEMPLAZAR IMAGEN: imagenes/videojuegos/Tetris.jpg (300x190px) -->
+                        <img src="../imagenes/videojuegos/Tetris.jpg" alt="Tetris">
+                        <h3>Tetris</h3>
+                        <p class="price">S/. 30</p>
+                        <a href="./contacto.html" class="btn-card">Ver Más</a>
+                    </article>
+
+                    <!-- Juego 5 -->
+                    <article class="card">
+                        <!-- REEMPLAZAR IMAGEN: imagenes/videojuegos/Space_Invaders.jpg (300x190px) -->
+                        <img src="../imagenes/videojuegos/Space_Invaders.jpg" alt="Space Invaders">
+                        <h3>Space Invaders</h3>
+                        <p class="price">S/. 35</p>
+                        <a href="./contacto.html" class="btn-card">Ver Más</a>
+                    </article>
+
+                </div>
+
+                <!-- REPRODUCTOR DE MÚSICA RETRO -->
+                <div class="reproductor-box" style="background-color: var(--bg-card); border: 1px solid var(--border-card); padding: 20px; border-radius: var(--radius-sm); text-align: center;">
+                    <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--text-primary);">Classic Mario Bros - Música Retro</h3>
+                    <audio controls style="width: 100%; max-width: 400px;">
+                        <!-- REEMPLAZAR AUDIO: Coloca tu archivo en audios/Super_Mario_Bros.mp3 -->
+                        <source src="../audios/Super_Mario_Bros.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: Inyectado dinámicamente por js/components.js -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal global -->
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Game - Consolas</title>
+
+    <!-- Hojas de estilo globales (usamos ../ porque estamos en la carpeta paginas/) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <!-- CABECERA GLOBAL: Inyectada dinámicamente por js/components.js -->
+    <div id="header-placeholder"></div>
+
+    <!-- CONTENIDO PRINCIPAL DE CONSOLAS -->
+    <main>
+
+        <!-- BANNER DE CONSOLAS -->
+        <section class="banner">
+            <!-- REEMPLAZAR IMAGEN: Coloca tu banner en imagenes/banners/ConsolasBanner.jpg (Dimensiones recomendadas: 1200x365px) -->
+            <img src="../imagenes/banners/ConsolasBanner.jpg" alt="Consolas que hicieron historia - Vuelve a jugar lo clásico">
+        </section>
+
+        <!-- SECCIÓN DE PRODUCTOS (Consolas Retro) -->
+        <section aria-labelledby="titulo-consolas">
+            <h2 id="titulo-consolas" class="section-title">Consolas Retro</h2>
+
+            <div class="contenedor-productos">
+
+                <!-- Producto 1: Nintendo NES -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/consolas/nintendo-nes.jpg (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/consolas/nintendo-nes.jpg" alt="Nintendo NES">
+                    <h3>Nintendo NES</h3>
+                    <p class="price">S/. 250</p>
+                    <a href="./contacto.html" class="btn-card">Comprar</a>
+                </article>
+
+                <!-- Producto 2: PlayStation 1 -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/consolas/playstation1.jpg (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/consolas/playstation1.jpg" alt="PlayStation 1">
+                    <h3>PlayStation 1</h3>
+                    <p class="price">S/. 600</p>
+                    <a href="./contacto.html" class="btn-card">Comprar</a>
+                </article>
+
+                <!-- Producto 3: Sega Genesis -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/consolas/sega-genesis.jpg (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/consolas/sega-genesis.jpg" alt="Sega Genesis">
+                    <h3>Sega Genesis</h3>
+                    <p class="price">S/. 300</p>
+                    <a href="./contacto.html" class="btn-card">Comprar</a>
+                </article>
+
+                <!-- Producto 4: Atari 2600 -->
+                <article class="card">
+                    <!-- REEMPLAZAR IMAGEN: Coloca la imagen en imagenes/consolas/atari-2600.jpg (Dimensiones recomendadas: 300x190px) -->
+                    <img src="../imagenes/consolas/atari-2600.jpg" alt="Atari 2600">
+                    <h3>Atari 2600</h3>
+                    <p class="price">S/. 280</p>
+                    <a href="./contacto.html" class="btn-card">Comprar</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA GLOBAL: Inyectado dinámicamente por js/components.js -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script principal global -->
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+</html>
