@@ -439,3 +439,117 @@
     border-radius: var(--radius-sm);
     object-fit: cover;
 }
+
+/* ===================================================
+   5. EFECTO LIGHTBOX (GALERÍA MODAL)
+=================================================== */
+
+/* Oculto por defecto, fijo cubriendo toda la pantalla */
+.lightbox {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 9, 19, 0.9); /* Fondo oscuro de la marca con transparencia */
+    backdrop-filter: blur(5px); /* Efecto cristal / desenfoque */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+/* Clase que JavaScript añadirá para mostrarlo */
+.lightbox.mostrar {
+    display: flex;
+    opacity: 1;
+}
+
+/* La imagen ampliada */
+.lightbox-contenido {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: var(--radius-md);
+    box-shadow: 0 0 25px rgba(77, 166, 255, 0.3);
+    border: 2px solid var(--border-card);
+    transform: scale(0.8);
+    transition: transform var(--transition-fast);
+}
+
+/* Animación de zoom al aparecer */
+.lightbox.mostrar .lightbox-contenido {
+    transform: scale(1);
+}
+
+/* Texto debajo de la imagen */
+.lightbox-caption {
+    margin-top: 15px;
+    color: var(--text-primary);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* El botón (X) para cerrar */
+.lightbox-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--text-secondary);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.lightbox-cerrar:hover {
+    color: var(--accent-red);
+}
+
+/* Cambiar el cursor a una 'lupa' en las imágenes de la página para indicar que se pueden hacer clic */
+.columna-destacados .img-producto img {
+    cursor: zoom-in;
+}
+
+/* Flechas de navegación del carrusel */
+.lightbox-prev,
+.lightbox-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 15px 20px;
+    user-select: none;
+    transition: var(--transition-fast);
+    background-color: rgba(7, 9, 19, 0.6);
+    border: 1px solid var(--border-card);
+    border-radius: var(--radius-sm);
+    z-index: 10000;
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: var(--accent-red);
+    background-color: var(--bg-card);
+    border-color: var(--accent-red);
+}
+
+/* Prevenir que el click en la imagen cierre el lightbox accidentalmente */
+.lightbox-contenido {
+    pointer-events: none;
+}
